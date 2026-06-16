@@ -46,7 +46,7 @@ CS_LIST = [
     # "edge_id_2",
 ]
 
-CS_SIZE = 15
+CS_SIZE = 50
 CS_POWER = [150000, 1.0]
 
 # TraCI port.
