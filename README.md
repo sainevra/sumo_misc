@@ -1,16 +1,16 @@
-# SUMO City-Scale Traffic and EV Charging Examples
+# 🚦 SUMO City-Scale Traffic and EV Charging Examples
 
 This repository provides reproducible SUMO resources for city-scale traffic stress testing and electric-vehicle (EV) charging-station modelling. It accompanies the research workflow presented in **“A SUMO-Based Framework for City-Wide Traffic Modelling with Electric Vehicle Charging Infrastructure.”**
 
 The repository includes:
 
-- a Python script that inserts lateral charging-station structures into an existing SUMO scenario;
-- a synthetic charging-station capacity experiment; and
-- a large-scale Seville traffic stress-test scenario.
+- 🧩 a Python script that inserts lateral charging-station structures into an existing SUMO scenario;
+- 🧪 a synthetic charging-station capacity experiment; and
+- 🌆 a large-scale Seville traffic stress-test scenario.
 
-> **Research prototype:** the included scenarios are designed for methodological and stress-testing purposes. The traffic demand is synthetic and should not be interpreted as a calibrated reproduction of real traffic conditions.
+> ⚠️ **Research prototype:** the included scenarios are designed for methodological and stress-testing purposes. The traffic demand is synthetic and should not be interpreted as a calibrated reproduction of real traffic conditions.
 
-## Repository contents
+## 📦 Repository contents
 
 ```text
 sumo_misc/
@@ -29,7 +29,7 @@ sumo_misc/
 └── seville_simulation.zip
 ```
 
-### `run_sumo_with_cs.py`
+### 🧩 `run_sumo_with_cs.py`
 
 The script inserts one or more charging stations into a SUMO network defined through plain XML files. For every selected road edge, it:
 
@@ -45,7 +45,7 @@ The script inserts one or more charging stations into a SUMO network defined thr
 
 The original input scenario is preserved because all modifications are applied inside a new folder under `runs/`.
 
-### `cs_example/`
+### 🧪 `cs_example/`
 
 This folder contains a complete synthetic charging-station capacity experiment. Its default configuration represents:
 
@@ -61,7 +61,7 @@ This folder contains a complete synthetic charging-station capacity experiment. 
 
 The experiment is designed to evaluate whether the proposed station can absorb EV demand without blocking its entrance or the surrounding road network.
 
-### `seville_simulation.zip`
+### 🌆 `seville_simulation.zip`
 
 This archive contains the selected city-scale traffic stress-test scenario used for the Seville case study:
 
@@ -75,7 +75,7 @@ This archive contains the selected city-scale traffic stress-test scenario used 
 
 The scenario uses synthetic origin-destination demand and is intended as a reproducible stress test rather than a calibrated traffic model.
 
-## Requirements
+## ✅ Requirements
 
 - Python 3
 - Eclipse SUMO installed
@@ -91,14 +91,14 @@ sumo-gui --version
 netconvert --version
 ```
 
-## Installation
+## 🚀 Installation
 
 ```bash
 git clone https://github.com/sainevra/sumo_misc.git
 cd sumo_misc
 ```
 
-## Running the charging-station example
+## ▶️ Running the charging-station example
 
 The repository is already configured to use `cs_example/`, generate a station with 50 charging spaces on edge `e6`, rebuild the network, and open the simulation in `sumo-gui`.
 
@@ -140,7 +140,7 @@ to:
 SUMO_BINARY = "sumo"
 ```
 
-## Script configuration
+## ⚙️ Script configuration
 
 Edit the configuration block at the beginning of `run_sumo_with_cs.py`.
 
@@ -178,7 +178,7 @@ CS_POWER = [150000, 1.0]
 
 The current charging-block design provides five spaces per block. Therefore, `CS_SIZE` should normally be a multiple of five.
 
-## Applying the generator to another SUMO scenario
+## 🛠️ Applying the generator to another SUMO scenario
 
 The script expects a scenario represented by SUMO plain files. If only a `.net.xml` file is available, the corresponding plain files can be exported with `netconvert` before running the generator.
 
@@ -204,7 +204,7 @@ Then:
 
 After generation, the resulting network should be visually inspected with `netedit` or `sumo-gui`, particularly when charging stations are inserted into complex urban roads, junctions, roundabouts, or short edges.
 
-## Running the Seville stress-test scenario
+## 🗺️ Running the Seville stress-test scenario
 
 Extract the archive:
 
@@ -226,7 +226,7 @@ sumo -c simulation.sumocfg
 
 The large scenario may require substantial CPU time and memory depending on the SUMO version, hardware, enabled outputs, and graphical rendering.
 
-## Charging-station design
+## 🔌 Charging-station design
 
 The generated facility is placed laterally with respect to the selected road edge so that charging vehicles do not stop directly on the main traffic lane. The layout includes:
 
@@ -244,7 +244,7 @@ Each charging block currently contains five charging spaces. The parking length 
 5 vehicles × 5 m + 4 gaps × 2 m = 33 m
 ```
 
-## Main outputs of the charging experiment
+## 📊 Main outputs of the charging experiment
 
 The provided configuration produces:
 
@@ -262,7 +262,7 @@ These outputs can be used to calculate metrics such as:
 - charger utilisation; and
 - internal rerouting and queue formation.
 
-## Limitations
+## ⚠️ Limitations
 
 - The provided demand is synthetic.
 - Charging-station geometry is generated algorithmically and should be checked for each target edge.
@@ -271,7 +271,7 @@ These outputs can be used to calculate metrics such as:
 - Results may vary across SUMO versions and operating systems.
 - Calibration and validation against observed traffic and charging data are outside the scope of the included examples.
 
-## Citation
+## 📚 Citation
 
 If you use this repository in academic work, please cite the associated paper when its final reference becomes available:
 
@@ -279,10 +279,10 @@ If you use this repository in academic work, please cite the associated paper wh
 
 SUMO should also be cited according to the recommendations of the Eclipse SUMO project.
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
 This work is part of the projects **SAINEVRA** (`PID2023-151065OB-I00`) and **ATopEH** (`PID2023-147795NA-I00`), funded by the Spanish Ministerio de Ciencia, Innovación y Universidades and Agencia Estatal de Investigación (`MCIN/AEI/10.13039/501100011033`).
 
-## License
+## 📄 License
 
 `run_sumo_with_cs.py` declares the **Eclipse Public License 2.0 (EPL-2.0)** in its source header. See the source file for details.
