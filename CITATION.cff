@@ -1,3 +1,6 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
 cff-version: 1.2.0
 title: SUMO City-Scale Traffic and EV Charging Examples
 message: >-
@@ -21,6 +24,9 @@ authors:
     given-names: María José
     orcid: 'https://orcid.org/0000-0003-3291-7297'
     affiliation: Universidad de Sevilla
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20760864
 repository-code: 'https://github.com/sainevra/sumo_misc'
 abstract: >
   Reproducible SUMO resources for city-scale traffic stress
