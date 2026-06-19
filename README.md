@@ -18,6 +18,14 @@ For questions, issues or collaboration related to this repository, please contac
 Universidad de Sevilla  
 [jgallardo7@us.es](mailto:jgallardo7@us.es)
 
+## 📚 Citation
+
+If you use this repository in academic work, please cite the associated paper when its final reference becomes available:
+
+> J. A. Gallardo-Gómez et al., “A SUMO-Based Framework for City-Wide Traffic Modelling with Electric Vehicle Charging Infrastructure,” forthcoming.
+
+SUMO should also be cited according to the recommendations of the Eclipse SUMO project.
+
 ## 📦 Repository contents
 
 ```text
@@ -278,14 +286,6 @@ These outputs can be used to calculate metrics such as:
 - The current architecture assumes blocks of five charging spaces.
 - Results may vary across SUMO versions and operating systems.
 - Calibration and validation against observed traffic and charging data are outside the scope of the included examples.
-
-## 📚 Citation
-
-If you use this repository in academic work, please cite the associated paper when its final reference becomes available:
-
-> J. A. Gallardo-Gómez et al., “A SUMO-Based Framework for City-Wide Traffic Modelling with Electric Vehicle Charging Infrastructure,” forthcoming.
-
-SUMO should also be cited according to the recommendations of the Eclipse SUMO project.
 
 ## 🙏 Acknowledgements
 
