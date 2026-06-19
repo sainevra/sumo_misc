@@ -10,6 +10,14 @@ The repository includes:
 
 > ⚠️ **Research prototype:** the included scenarios are designed for methodological and stress-testing purposes. The traffic demand is synthetic and should not be interpreted as a calibrated reproduction of real traffic conditions.
 
+## 📬 Contact
+
+For questions, issues or collaboration related to this repository, please contact:
+
+**Juan Alberto Gallardo-Gómez**  
+Universidad de Sevilla  
+[jgallardo7@us.es](mailto:jgallardo7@us.es)
+
 ## 📦 Repository contents
 
 ```text
