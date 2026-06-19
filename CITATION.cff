@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+title: SUMO City-Scale Traffic and EV Charging Examples
+message: >-
+  If you use this software or the attached simulation
+  scenarios, please cite it using the metadata below.
+type: software
+authors:
+  - family-names: Gallardo-Gómez
+    given-names: Juan Alberto
+    orcid: 'https://orcid.org/0009-0006-1312-0476'
+    affiliation: Universidad de Sevilla
+  - family-names: Guisado-Lizar
+    given-names: José-Luis
+    orcid: 'https://orcid.org/0000-0001-5480-7617'
+    affiliation: Universidad de Sevilla
+  - family-names: Díaz-del-Río
+    given-names: Fernando
+    orcid: 'https://orcid.org/0000-0001-6184-1629'
+    affiliation: Universidad de Sevilla
+  - family-names: Morón-Fernández
+    given-names: María José
+    orcid: 'https://orcid.org/0000-0003-3291-7297'
+    affiliation: Universidad de Sevilla
+repository-code: 'https://github.com/sainevra/sumo_misc'
+abstract: >
+  Reproducible SUMO resources for city-scale traffic stress
+  testing and electric-vehicle charging-station modelling.
+  The repository includes a Python script for inserting
+  lateral charging stations into SUMO road networks, a
+  Seville traffic stress-test scenario, and a
+  charging-station capacity stress-test scenario.
+keywords:
+  - SUMO
+  - traffic simulation
+  - electric vehicles
+  - charging stations
+  - urban mobility
+  - OpenStreetMap
+license: EPL-2.0
+version: 1.0.0
+date-released: '2026-06-19'
